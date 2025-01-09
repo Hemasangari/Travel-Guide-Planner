@@ -321,7 +321,7 @@ footer {
 .social-media-section {
     padding-top: 30px;
     text-align: center;
-    margin-right: 200px;
+    margin-right: 400px;
     display: flexbox;
     flex-direction: column;
     justify-content: center; /* Center content vertically */
