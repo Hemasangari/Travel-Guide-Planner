@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene Route - Your Travel Guide</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <span class="main-logo">SERENE ROUTE</span>
+            <span class="subtitle">Your Travel Guide</span>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Destinations <span class="arrow-down">&#8609;</span></a>
+                    <div class="dropdown-content">
+                      <a href="destination1.html">Japan</a>
+                      <a href="destination2.html">Italy</a>
+                      <a href="destination3.html">New Zealand</a>
+                      <a href="destination4.html">South Africa</a>
+                      <a href="destination5.html">New York</a>
+                    </div>
+                  </li>                  
+                <li><a href="Plan_Your_Trip.html">Plan Your Trip</a></li>
+                <li><a href="Travel_VlogBlog.html">Travel Vlog & Travel Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="main.html" class="breadcrumb-item">Home</a> &gt; 
+            <span class="breadcrumb-item">Gallery</span>
+        </div>
+        
+         <!-- Torn Paper Effect Section -->
+        <div class="title-section">
+            <div class="title-content">
+            <h1 class="page-title">Gallery</h1>
+            <p class="page-subtitle">"Capturing Moments, Creating Memories"</p>
+        </div>
+
+        <!--Gallery Grid-->
+        <div class="gallery-grid">
+            <!-- First Row -->
+            <div class="gallery-item" data-src="original.img1.jpeg" data-caption = "Mt.Fuji,Japan">
+                <img src="1.png" alt="Image 1">
+            </div>
+            <div class="gallery-item" data-src="original.img2.jpeg" data-caption = "Matsumoto,Japan">
+                <img src="2.png" alt="Image 2">
+            </div>
+            <div class="gallery-item" data-src="original.img3.jpeg" data-caption = "Kyoto,Japan">
+                <img src="3.png" alt="Image 3">
+            </div>
+            <div class="gallery-item" data-src="original.img4.jpeg" data-caption = "Kyoto Temple,Japan">
+                <img src="4.png" alt="Image 4">
+            </div>
+
+            <!-- Second Row -->
+            <div class="gallery-item" data-src="original.img5.jpeg" data-caption = "Rome,Italy">
+                <img src="5.png" alt="Image 5">
+            </div>
+            <div class="gallery-item" data-src="original.img6.jpeg" data-caption = "Siena,Italy">
+                <img src="6.png" alt="Image 6">
+            </div>
+            <div class="gallery-item" data-src="original.img7.jpeg" data-caption = "Braies,Italy">
+                <img src="7.png" alt="Image 7">
+            </div>
+            <div class="gallery-item" data-src="original.img8.jpeg" data-caption = "Venezia,Veneto,Italien">
+                <img src="8.png" alt="Image 8">
+            </div>
+
+            <!-- Third Row -->
+            <div class="gallery-item" data-src="original.img9.jpeg" data-caption = "Canterbury,New Zealand">
+                <img src="9.png" alt="Image 9">
+            </div>
+            <div class="gallery-item" data-src="original.img10.jpeg" data-caption = "Door of a Hobbit Hole, New Zealand">
+                <img src="10.png" alt="Image 10">
+            </div>
+            <div class="gallery-item" data-src="original.img11.jpeg" data-caption = "Cape Reinga, Northland, New Zealand">
+                <img src="11.png" alt="Image 11">
+            </div>
+            <div class="gallery-item" data-src="original.img12.webp" data-caption = "Hamilton, Waikato, New Zealand">
+                <img src="12.png" alt="Image 12">
+            </div>
+
+            <!-- Fourth Row -->
+            <div class="gallery-item" data-src="original.img13.jpeg" data-caption = "South Africa">
+                <img src="13.png" alt="Image 13">
+            </div>
+            <div class="gallery-item" data-src="original.img14.jpeg" data-caption = "Man Wearing Traditional Wear in South Africa">
+                <img src="14.png" alt="Image 14">
+            </div>
+            <div class="gallery-item" data-src="original.img15.jpeg" data-caption = "Cape Town, South Africa">
+                <img src="15.png" alt="Image 15">
+            </div>
+            <div class="gallery-item" data-src="original.img16.jpeg" data-caption = "Kimberley, NC, South Africa">
+                <img src="16.png" alt="Image 16">
+            </div>
+
+            <!-- Fifth Row -->
+            <div class="gallery-item" data-src="original.img17.jpeg" data-caption = "New York City, United States">
+                <img src="17.png" alt="Image 17">
+            </div>
+            <div class="gallery-item" data-src="original.img18.jpeg" data-caption = "Brooklyn Bridge, New York City, United States">
+                <img src="18.png" alt="Image 18">
+            </div>
+            <div class="gallery-item" data-src="original.img19.jpeg" data-caption = "Down Town Manhattan, New York City, United States">
+                <img src="19.png" alt="Image 19">
+            </div>
+            <div class="gallery-item" data-src="original.img20.jpeg" data-caption = "New York Hotel Building, New York City, USA">
+                <img src="20.png" alt="Image 20">
+            </div>
+        </div>     
+        
+        <!-- Modal -->
+<div id="imageModal" class="modal">
+    <div class="modal-content-container">
+        <img id="modalImage" class="modal-image" src="" alt="">
+        <div id="modalCaption" class="modal-caption"></div>
+    </div>
+    <span class="close">&times;</span>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</div>
+
+        <!--Footer-->
+    </main>
+    <footer>
+        <div class="footer-section copyright">
+            <p>&copy; 2024 Serene Route. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

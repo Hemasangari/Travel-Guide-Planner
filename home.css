@@ -1,0 +1,559 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header Section */
+header {
+    background-color: rgba(0, 0, 0, 1.0);  /* Dark background for header */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: relative;
+    width: 100%;
+    z-index: 10;  /* Ensures header stays above other content */
+}
+
+/* Logo and Navigation Styling */
+.logo {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.main-logo {
+    font-size: 20px;
+    font-weight: 800;
+    display: block;
+}
+
+.subtitle {
+    font-family: 'sans-serif';
+    font-size: 16px;
+    font-weight: normal;
+    color: #e1dada;
+    margin-top: 5px;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0px 15px;
+}
+
+/* Navigation Link Styling */
+nav ul li a {
+    text-decoration: none;
+    color: #ece8e8;
+    font-family: 'sans-serif';  
+    font-size: 18px;
+    font-weight: normal;
+    padding: 5px 0px;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: #f4b400;
+}
+
+/* Dropdown Menu Styling */
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    padding: 10px;
+    z-index: 10;
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Arrow for dropdown */
+.arrow-down {
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+nav ul li.dropdown:hover .arrow-down {
+    transform: rotate(180deg);
+}
+
+/* Dropdown link styling */
+nav ul li.dropdown .dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+}
+
+/* Hover effect for dropdown links */
+nav ul li.dropdown .dropdown-content a:hover {
+    background-color: #f4b400;
+}
+
+/* Background Video Section */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    top: 0px;
+}
+
+/* Video container styling to fill the entire screen */
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay for the background video */
+.video-overlay {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);  /* Semi-transparent dark background */
+}
+
+/* Overlay text styling */
+.video-overlay h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.video-overlay p {
+    font-size: 18px;
+    font-style: oblique;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+/* Dropdown container within the video overlay */
+.dropdown-container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0px auto;
+}
+
+/* Dropdown selection styling */
+.dropdown-container select {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    cursor: pointer;
+}
+
+.dropdown-container select:focus {
+    outline: none;
+    border-color: #f4b400;
+}
+
+/* Footer Styling */
+footer {
+    background: url('footer-background.jpeg') no-repeat center center/cover, #1a1a1a;
+    background-blend-mode: overlay;
+    color: #e0e0e0d4;
+    border-top: 5px solid #f4b400;  /* Highlight footer with a border */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual Footer Section */
+.footer-section {
+    margin-top: 10px;
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
+    border-radius: 8px;
+    margin: 30px auto;
+}
+
+/* Footer section title */
+.footer-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f4b400;
+    transition: color 0.3s;
+}
+
+/* Footer text style */
+.footer-section p {
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 15px;
+    line-height: 24px;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+
+/* FAQs section */
+.faq-section {
+    padding: 40px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 1000px;
+    margin: 20px auto; /* Center the FAQs section */
+}
+
+.faq-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f4b400;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    text-align: left; /* Align individual FAQ items to the left for readability */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth border hover effect */
+    border: 1px solid transparent; /* Default border with transparency */
+    border-radius: 4px; /* Rounded corners on hover effect */
+}
+
+.faq-item:hover {
+    transform: translateX(5px); /* Subtle hover effect */
+    border-color: #f4b400; /* Hover border color */
+}
+
+.faq-item h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b7b5b0;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.5;
+    padding-left: 15px;
+    border-left: 4px solid #f4b400; /* Optional visual cue */
+}
+
+/* Copyright Section in Footer */
+.footer-section.copyright {
+    margin-top: 0px;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 0px 0px;
+    text-align: center;
+    z-index: 5;
+    position: relative;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.footer-section.copyright p {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section.copyright:hover {
+    transform: none;
+    background-color: #000;
+    border-color: transparent;
+    box-shadow: none;
+    color: #fff;
+}
+
+.footer-section.copyright:hover p {
+    color: #fff; 
+}
+
+/* Social Media Section */
+.social-media-section {
+    padding-top: 30px;
+    text-align: center;
+    margin-right: 40px;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    width: 100%;
+}
+
+/* Social Media Heading */
+.social-media-section h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f4b400;
+    margin-bottom: 15px;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Align icons and text in the center */
+}
+
+/* Social Icon Item */
+.social-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Center align icon and label */
+    gap: 5px; /* Space between icon and name */
+}
+
+/* Social Icon Style */
+.social-icon {
+    font-size: 30px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+/* Hover effect on social icons */
+.social-icon:hover {
+    color: #f4b400;
+}
+
+/* Social Media Name Styling */
+.social-name {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Adjust space below the Social Media section */
+.footer-section.social-media-section {
+    margin-bottom: 30px;
+}
+
+
+/* Contact Form Styles */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    align-items: center;
+    width: 100%;
+    justify-content: center; /* Center content horizontally */
+    flex-direction: column; /* Ensure the title is above the form */
+    padding-top: 30px;
+}
+
+#contact-form label {
+    font-size: 16px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+/* Input and Textarea fields styling */
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #868686;
+    width: 100%;
+    max-width: 500px;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+/* Submit button styling */
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #2880de;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on button */
+#contact-form button:hover {
+    background-color: #e0a500;
+}
+
+/* Success and Error messages for contact form */
+#contact-form .success-message {
+    color: #4CAF50;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#contact-form .error-message {
+    color: #f44336;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Review Section Styles */
+.reviews-container {
+    margin: 20px 30px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect on individual review items */
+.review:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Review text styling */
+.review p {
+    font-size: 14px;
+    color: #555;
+    margin: 0px;
+    line-height: 21px;
+}
+
+/* Review author styling */
+.review strong {
+    color: #333;
+}
+
+/* Hidden Class for Modals or Popups */
+.hidden {
+    display: none;
+}
+
+/* Review Form Styles */
+#review-form-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#review-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#review-form input, 
+#review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#write-review-link {
+    color: #2880de; /* Update color as desired */
+    text-decoration:underline; /* Optional: Remove underline */
+}
+
+#write-review-link:hover {
+    color: #e0a500; /* Optional: Hover effect for the text */
+}
+
+
+/* Modal Styles for Popups */
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal content container styling */
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button in modal */
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
