@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene Route - Your Travel Guide</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <span class="main-logo">SERENE ROUTE</span>
+            <span class="subtitle">Your Travel Guide</span>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Destinations <span class="arrow-down">&#8609;</span></a>
+                    <div class="dropdown-content">
+                      <a href="destination1.html">Japan</a>
+                      <a href="destination2.html">Italy</a>
+                      <a href="destination3.html">New Zealand</a>
+                      <a href="destination4.html">South Africa</a>
+                      <a href="destination5.html">New York</a>
+                    </div>
+                  </li>                  
+                <li><a href="Plan_Your_Trip.html">Plan Your Trip</a></li>
+                <li><a href="Travel_VlogBlog.html">Travel Vlog & Travel Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Background Video Section -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="video.home.MOV" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">
+            <h1>What's Your Destination ?</h1>
+            <p>Travel far enough, and you meet yourself. Each destination reveals something new about the world and, in turn, about who you are. 
+                <br>Begin the journey – the destination awaits.</p>
+            <div class="dropdown-container">
+                <select id="destination-select">
+                    <option value="" disabled selected>Where to go ?</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Italy">Italy</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="New York">New York</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+   <!-- About Us Section -->
+<div class="footer-section">
+    <i class="fas fa-info-circle"></i>
+    <h2>About Us</h2>
+            <p>Serene Route offers comprehensive travel guides, recommendations, and resources 
+            to ensure your trip is smooth, enjoyable, and memorable. Let us help you turn your 
+            travel dreams into reality.We are dedicated to providing trustworthy travel information to inspire your next adventure.</p>
+        </div>
+
+        <section id="faqs" class="faq-section">
+            <h2>FAQs</h2>
+            <div class="faq-item">
+              <h4>What does this website offer?</h4>
+              <p>We provide travel tips, destination guides, and interactive tools to plan your trips seamlessly.</p>
+            </div>
+            <div class="faq-item">
+              <h4>Is the content updated regularly?</h4>
+              <p>Yes, we frequently update our content to ensure accuracy and freshness for our users.</p>
+            </div>
+            <div class="faq-item">
+              <h4>Do I need travel insurance?</h4>
+              <p>While travel insurance is not mandatory, we recommend purchasing it to cover<br> unexpected issues such as canceled flights, medical emergencies, or lost luggage during your trip.</p>
+            </div>
+          </section>
+          
+        <!-- Space Below About Us Section -->
+    <div class="space"></div>
+
+        <!-- Social Media Section -->
+<div class="footer-section social-media-section">
+    <h2>Follow Us</h2>
+    <div class="social-icons">
+        <div class = "social-icon-item">
+        <a href="https://www.facebook.com/login/" class="social-icon">
+        <i class="fab fa-facebook-f"></i></a>
+        <span class="social-name">Facebook</span>
+    </div>
+
+    <div class="social-icon-item">
+        <a href="https://x.com/?lang=en&mx=2" class="social-icon">
+        <i class="fab fa-twitter"></i></a>
+        <span class="social-name">Twitter</span>
+    </div>
+
+    <div class="social-icon-item">
+        <a href="https://www.instagram.com/" class="social-icon">
+        <i class="fab fa-instagram"></i></a>
+        <span class="social-name">Instagram</span>
+    </div>
+    <div class="social-icon-item"></div>
+        <a href="https://www.youtube.com/" class="social-icon">
+        <i class="fab fa-youtube"></i></a>
+        <span class="social-name">Youtube</span>
+    </div>
+</div>
+
+        <!-- Contact Us Section -->
+<div class="footer-section social-media-section">
+    <h2>Contact Us</h2>
+    <p>Email: info@sereneroute.com</p>
+
+    <form id="contact-form" action="#" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your inquiry" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+        <!-- Review Section -->
+<div class="footer-section">
+    <i class="fas fa-star"></i>
+    <h2>Review</h2>
+    <div class="reviews-container">
+        <div class="review">
+            <p>"This is the most reliable travel guide I've used! The destination tips were spot-on." – <strong>Emily R.</strong></p>
+        </div>
+        <div class="review">
+            <p>"Planning my trip was so easy with Serene Route. Great work, highly recommend!" – <strong>Jason T.</strong></p>
+        </div>
+        <div class="review">
+            <p>"I love the layout and simplicity of this guide. The gallery is stunning!" – <strong>Aisha L.</strong></p>
+        </div>
+        <div class="review">
+            <p>"The reviews helped me decide on my dream destination. Excellent site!" – <strong>Michael K.</strong></p>
+        </div>
+    </div>
+    
+    <p><a href="#" id="write-review-link">Write a Review</a></p>
+    <!-- Hidden Review Form -->
+    <div id="review-form-container" class="hidden">
+        <form id="review-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="review-name" name="name" placeholder="Enter your name" required>
+            <label for="review">Your Review:</label>
+            <textarea id="review-text" name="review" rows="5" placeholder="Write your review" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+</div>
+        
+    </footer>
+     <!--Footer-->
+    </main>
+    <footer>
+        <div class="footer-section copyright">
+            <p>&copy; 2024 Serene Route. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
