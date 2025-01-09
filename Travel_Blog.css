@@ -1,0 +1,387 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header Section */
+header {
+    background-color: rgba(0, 0, 0, 1.0);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+
+}
+
+/* Logo and Navigation */
+.logo {
+    font-family: 'Open Sans', sans-serif;  /* Apply sans-serif font to entire logo section */
+    text-align: center;         /* Center content inside the logo container */
+    padding: 20px 0;            /* Add padding to space out logo elements */
+}
+
+.main-logo {
+    font-size: 20px;  /* Main logo font size */
+    font-weight: 800; /* Bold font for the main logo text */
+    display: block;    /* Make it behave as a block element */
+}
+
+.title {
+    color: #f0e5e5;  /* White color for Your Travel Guide */
+}
+
+.title-section {
+   
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+    padding: 200px 20px;
+    color: white;
+}
+
+.title-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.title-content p {
+    font-size: 20px;
+    font-family: Arial, sans-serif; /* Remove the duplicate 'font-family' */
+    font-style: italic; /* This will italicize the text */
+}
+
+
+/* Adding a new class to style the second part "Map it out, make it happen" */
+.subtitle.secondary {
+    color: #fef9f9;  /* Set color of "Map it out, make it happen" to black */
+}
+
+
+/* Navigation - Set sans-serif font and styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ece8e8;
+    font-family: 'sans-serif';  /* Simple sans-serif font */
+    font-size: 18px;
+    font-weight: normal;
+    padding: 5px 0;
+}
+
+nav ul li a:hover {
+    color: #f4b400;
+}
+
+/* Navigation Link Styling */
+nav ul li a {
+    text-decoration: none;
+    color: #ece8e8;
+    font-family: 'sans-serif';  
+    font-size: 18px;
+    font-weight: normal;
+    padding: 5px 0px;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: #f4b400;
+}
+
+/* Dropdown Menu Styling */
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    padding: 10px;
+    z-index: 10;
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Arrow for dropdown */
+.arrow-down {
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+nav ul li.dropdown:hover .arrow-down {
+    transform: rotate(180deg);
+}
+
+/* Dropdown link styling */
+nav ul li.dropdown .dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+}
+
+/* Hover effect for dropdown links */
+nav ul li.dropdown .dropdown-content a:hover {
+    background-color: #f4b400;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 14px;
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+.breadcrumb a {
+    color: #333;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: fixed; /* Fix slideshow in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ensure full height of the viewport */
+    overflow: hidden;
+    z-index: -1; /* Make sure slideshow stays behind content */
+    background-color: transparent; /* Transparent background */
+}
+
+/* Slide styles */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Make sure slide takes up full height of the viewport */
+    background-position: center;
+    background-size: cover; /* Ensure the image covers the entire screen */
+    opacity: 0; /* Start with the slides hidden */
+    transition: opacity 1s ease-in-out; /* Smooth transition */
+}
+
+/* Set the images for the slides */
+.slide:nth-child(1) {
+    background-image: url('japanc.jpg'); /* Image for Japan */
+}
+
+.slide:nth-child(2) {
+    background-image: url('italyc.jpg'); /* Image for Italy */
+}
+
+.slide:nth-child(3) {
+    background-image: url('nzc.jpg'); /* Image for New Zealand */
+}
+
+.slide:nth-child(4) {
+    background-image: url('sac.jpg'); /* Image for Sacramento */
+}
+
+.slide:nth-child(5) {
+    background-image: url('nyc.jpg'); /* Image for New York City */
+}
+
+/* Keyframe animation to change the opacity */
+@keyframes slideshow {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Apply animation to slides */
+.slide:nth-child(1) {
+    animation: slideshow 25s infinite;
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation: slideshow 25s infinite;
+    animation-delay: 5s;
+}
+
+.slide:nth-child(3) {
+    animation: slideshow 25s infinite;
+    animation-delay: 10s;
+}
+
+.slide:nth-child(4) {
+    animation: slideshow 25s infinite;
+    animation-delay: 15s;
+}
+
+.slide:nth-child(5) {
+    animation: slideshow 25s infinite;
+    animation-delay: 20s;
+}
+
+main {
+    padding: 32px;
+}
+
+address.breadcrumb {
+    font-style: normal;
+    margin-top: 20px;
+    padding: 10px;
+    padding-right: 0px;
+    text-align: left; /* Align to the left */
+    margin-left: 5px; /* Add some space from the left side */
+}
+
+.center-text  {
+    /* Black with 50% transparency */
+   padding: 20px;
+   border-radius: 10px;
+   width: 100%; /* Adjust width as needed */
+   margin: 20px auto; /* Center align */
+   text-align: justify;
+   font-size: 1.2rem;
+   font-style: oblique;
+}
+
+/* Dropdown Menu */
+select#country-select {
+    display: block; /* Ensures it's treated as a block-level element */
+    margin: 0 auto 20px; /* Centers horizontally using auto and adds bottom margin */
+    margin-bottom: 50px;
+    margin-top: 72px;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Adjust width as needed */
+    text-align: center; /* Centers text inside the dropdown */
+}
+
+/* Country Details */
+.country-box {
+    display: none; /* Default: hide all country details */
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding:80px;
+    background-color: #f9f9f9;
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.country-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+/* Accordion */
+.accordion {
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    outline: none;
+    color: #000000;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.accordion:after {
+    content: '\25BC'; /* Down arrow */
+    font-size: 1rem;
+    float: right;
+}
+
+.accordion.active:after {
+    content: '\25B2'; /* Up arrow */
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    border-left: 2px solid #ccc;
+    width: 100%;
+}
+
+.thumbnail-container {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    border: 10px solid #ccc;
+    border-radius: 5px;
+}
+
+.thumbnail-container img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.thumbnail-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
