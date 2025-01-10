@@ -117,6 +117,7 @@ nav ul li.dropdown .dropdown-content a:hover {
     padding: 100px 20px;
     color: white;
     margin-bottom: 30px;
+    position: fixed;
 }
 
 .title-content h1 {
@@ -178,6 +179,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 200px;
+    position: fixed;
 }
 
 .gallery-item {
