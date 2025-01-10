@@ -324,7 +324,7 @@ footer {
     text-align: center;
     margin-right: 400px;
     display: flexbox;
-    flex-direction: column;
+
     justify-content: center; /* Center content vertically */
     width: 100%;
 }
