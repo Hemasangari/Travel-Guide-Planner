@@ -126,6 +126,8 @@ nav ul li.dropdown .dropdown-content a:hover {
     height: 100vh;
     overflow: hidden;
     top: 0px;
+    justify-content: center;
+    align-items:center;
 }
 
 /* Video container styling to fill the entire screen */
@@ -209,7 +211,6 @@ footer {
     flex: 1 1 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     align-items: center;
     padding: 20px;
